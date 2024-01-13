@@ -1,0 +1,139 @@
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.video-title {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.profile-picture {
+    width: 36px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-time {
+    font-family: Roboto, Arial;
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 0;
+    bottom: 0;
+    font-size: 13px;
+    margin-right: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-bottom: 6px;
+    border-radius: 2px;
+}
+
+
+.video-author {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    cursor: pointer;
+
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 40px;
+}
+
+.channel-picture-container {
+    position: relative;
+    display: inline-block;
+}
+
+.channel-hover-author {
+    font-weight: bold;
+}
+
+.channel-statss {
+    color: rgb(156, 156, 156);
+}
+
+.channel-hover {
+    position: absolute;
+    background-color: white;
+    width: 200px;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    font-family: Roboto, Arial;
+    font-size: 14px;
+    transition: opacity 0.15s;
+    top: 55px;
+    z-index: 300;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.channel-hover-pic {
+    height: 50px;
+    margin-right: 8px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.channel-picture-container:hover .channel-hover {
+    opacity: 1;
+}
+
+
+
+
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 751px ) and (min-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
